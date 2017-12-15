@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<h2>Welcome to Ionic {{ username }} ! </h2>
+
+  <ion-row>
+<button (click)="navigateToAnotherModule()"ion-button color="primary">Load from Diff Module</button>
+</ion-row>
+<ion-row>
+<button (click)="navigateToSameModule()"ion-button color="danger">Load from Same Module</button>
+</ion-row>
+
+<ion-card-content>
+  <ion-item>
+      <ion-label primary>Username : {{ username }}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label primary>Password : {{ password }}</ion-label>
+</ion-item>
+</ion-card-content>
+
+</ion-content>
